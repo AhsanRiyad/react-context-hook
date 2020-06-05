@@ -1,0 +1,3 @@
+to create react app
+
+npm create-react-app contex-app
