@@ -1,7 +1,5 @@
 import React, { Component, createContext } from 'react'
 import { ThemeContext } from './themecontext';
-
-
 export const AuthContext = createContext();
 
 class AuthContextProvider extends Component {
