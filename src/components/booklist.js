@@ -3,9 +3,11 @@ import { ThemeContext } from '../context/themecontext';
 import { BookContext } from '../context/BookContext';
 
 const BookList = () => {
+
     const { isLightTheme, light, dark } = useContext(ThemeContext);
     const { books } = useContext(BookContext);
     const theme = isLightTheme ? light : dark;
+    
     return (
         <div className="book-list" style={{ color: theme.syntax, background: theme.bg }}>
             <ul>
@@ -16,6 +18,7 @@ const BookList = () => {
                 })}
             </ul>
         </div>
+        
     );
 }
 
